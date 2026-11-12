@@ -1,6 +1,9 @@
-string transmission = "AB#CD##EF";
+string transmission = "###";
 int interferenceCount = 0;
 
-// TODO: Bruk foreach over transmission.
+foreach(char c in transmission)
+{
+    if(c.Equals('#')) interferenceCount++;
+}
 
 Console.WriteLine($"Interference markers: {interferenceCount}");
